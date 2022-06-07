@@ -6,11 +6,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}  {% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'header/main.css' %}">
+    <!-- CSS only -->
+    <link href="{% static 'https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css' %}" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <body>
-    <h1 style="color: green;">Hello from Base HTML</h1>
+
+    <nav>
+        
+       
+        <div class="nav-left">
+            
+            <label for="">K E T C H</label>
+
+            <ul>
+                <a href="" class="li">MEN</a>
+                <a href="" class="li">WOMEN</a>
+                <a href="" class="li">BRANDS</a>
+                <a href="" class="li">NEW IN</a>
+                <a href="" class="li">SUPER SALE</a>
+
+                <!-- <li><a href="" class="">MEN</a></li> 
+                <li><a href="" class="">WOMEN</a></li>
+                <li><a href="" class="">BRANDS</a></li>
+                <li><a href="" class="">NEW IN</a></li>
+                <li><a href="" class="">SUPER SALE</a></li> -->
+            </ul>
+
+        </div>
+
+       
+        <div class="nav-right">
+
+            <div class="search-box">
+                <img src="{% static '/images/search.png' %}" alt="">
+                <input type="text" placeholder="Search">
+            </div>
+
+            <div class="user-area">
+                <img src="{% static '/images/avatar.png' %}" alt="">
+                <img src="{% static '/images/heart.png' %}" alt="">
+                <img src="{% static '/images/bag.png' %}" alt="">
+            </div>
+
+        </div>
+
+    </nav>
+
     {% block content %}  {% endblock %}
-    <img src="{% static '/images/facebook.png' %}" alt="">
+    
 
    
     

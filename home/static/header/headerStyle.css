@@ -1,0 +1,34 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'poppins', 'sans-serif';
+}
+
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #1876f2 ;
+    padding: 5px 5%;
+    
+}
+
+body{
+    background: #efefef;
+}
+
+.nav-left{
+    display: flex;
+    align-items: center;
+
+}
+
+.nav-left ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+
+
