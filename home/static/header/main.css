@@ -5,14 +5,14 @@
 }
 
 
-nav{
+/* nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     background: #055C9D ;
     padding: 5px 2%;
     height: 75px;
-}
+} */
 
 body{
     background: #efefef;
@@ -36,16 +36,19 @@ body{
 }
 
 
-.nav-left ul a{
+.nav-left ul li{
     list-style: none;
     display: inline-block;
     margin: 0 10px;
-    color: white;
-    text-decoration: none;
     font-size: 15px;
 }
 
-.nav-left ul a :hover{
+.nav-left ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.nav-left ul li :hover{
   color: #89CFF0;
 }
 
